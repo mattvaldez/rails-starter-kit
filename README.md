@@ -21,21 +21,28 @@ After creating the new repository, follow these steps in the terminal:
 
 To update the following files with your project name, run the following command in the terminal:
 
-  $ rake project:setup 
+  $ rake project:setup
 
   This will update:
 
-  - README.md 
-  - app/views/layouts/application.html.erb 
-  - config/database.yml 
+  - README.md
+  - app/views/layouts/application.html.erb
+  - config/database.yml
   - config/initializers/session_store.rb
   - config/application.rb
 
-Just a couple more things before you dive in:
+## React JS Integration
 
+  - Run the following commands to install React and its dependencies
 
-- Update the mailer host in `config/environments/development.rb` and `config/environments/production.rb`
-	
+	`$ rake webpacker:install`
+
+	`$ rake webpacker:install:react`
+  - If you get an error, you will most likely have to install [Yarn](https://yarnpkg.com/en/), which is the package manager that [Webpacker](https://github.com/rails/webpacker) uses. It can be installed with [Homebrew](https://brew.sh).
+
+	`$ brew install yarn`
+  - Run the rake commands from above again and you should be good to go.
+
 If everything goes well, you should be ready to start work on your new project.
 
 ## Out-of-the-box functionality
