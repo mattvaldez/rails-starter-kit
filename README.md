@@ -42,6 +42,7 @@ To update the following files with your project name, run the following command 
 
 	`$ brew install yarn`
   - Run the rake commands from above again and you should be good to go.
+  - For more information, see [this post](https://www.standardco.de/integrating-react-with-rails-4).
 
 If everything goes well, you should be ready to start work on your new project.
 
